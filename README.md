@@ -1,5 +1,3 @@
-# Dutluk 🌳
-
 This is [my](https://cemrekarakas.com) playground.
 
 ## Projects under [dutl.uk](dutl.uk)
