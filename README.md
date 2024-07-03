@@ -20,7 +20,7 @@ body {
   background-size: cover;
   height: 100vh;
 }
-markdown-body {
+.markdown-body {
   font-weight: 200;
   background-color: #FFFFFFAA;
   padding: 2em;
