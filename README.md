@@ -17,6 +17,8 @@ This is [my](https://cemrekarakas.com) playground.
 <style>
 body {
   background-image: url(https://i.ibb.co/K0JCmnr/dutluk-transparent.png);
+  background-size: cover;
+  height: 100vh;
 }
 markdown-body {
   font-weight: 200;
