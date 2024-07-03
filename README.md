@@ -2,7 +2,7 @@ This is [my](https://cemrekarakas.com) playground.
 
 ## Projects under [dutl.uk](dutl.uk)
 
-| website | project | notes |
+| Website | Project | Notes |
 | -                                           | -             | - |
 | [lisan.dutl.uk](https://lisan.dutl.uk)      | Lisan         | Learn languages
 | [emoji.dutl.uk](https://emoji.dutl.uk)      | Emoji Gallery | A Gallery of emojis as images in various sizes 
@@ -17,5 +17,11 @@ This is [my](https://cemrekarakas.com) playground.
 <style>
 body {
   background-image: url(https://i.ibb.co/K0JCmnr/dutluk-transparent.png);
+}
+markdown-body {
+  font-weight: 200;
+  background-color: #FFFFFFAA;
+  padding: 2em;
+  border-radius: 1em;
 }
 </style>
