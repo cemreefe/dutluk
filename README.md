@@ -13,3 +13,9 @@ This is [my](https://cemrekarakas.com) playground.
 | [uk-sponsors.dutl.uk](https://uk-sponsors.dutl.uk) | UK Sponsors | A simple frontend to view the UK Tier-2 visa sponsors list (alternative to [uktiersponsors](https://uktiersponsors.co.uk/))
 | [untitled-diary-app.dutl.uk](#) | Untitled Diary App (UDA) | A slow social media app to have deeper & meaningful interactions with your loved ones (Deprecated)
 
+
+<style>
+body {
+  background-image: url(https://i.ibb.co/K0JCmnr/dutluk-transparent.png);
+}
+</style>
