@@ -12,6 +12,7 @@ This is [my](https://cemrekarakas.com) playground.
 | [scientificturk.dutl.uk](https://scientificturk.dutl.uk) | Scientific Turk | Parse and translate loyalty-free articles from around the web
 | [uk-sponsors.dutl.uk](https://uk-sponsors.dutl.uk) | UK Sponsors | A simple frontend to view the UK Tier-2 visa sponsors list (alternative to [uktiersponsors](https://uktiersponsors.co.uk/))
 | [untitled-diary-app.dutl.uk](#) | Untitled Diary App (UDA) | A slow social media app to have deeper & meaningful interactions with your loved ones (Deprecated)
+| [rss-reader.dutl.uk](https://rss-reader.dutl.uk) | Simple RSS Reader | A simple completely client-side RSS reader
 
 
 <style>
