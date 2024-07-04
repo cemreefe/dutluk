@@ -1,6 +1,6 @@
 This is [my](https://cemrekarakas.com) playground.
 
-## Projects under [dutl.uk](dutl.uk)
+## Projects under dutl.uk
 
 | Website | Project | Notes |
 | -                                           | -             | - |
