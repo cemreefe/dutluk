@@ -6,7 +6,7 @@ This is [my](https://cemrekarakas.com) playground.
 | -                                           | -             | - |
 | [lisan.dutl.uk](https://lisan.dutl.uk)      | Lisan         | Learn languages
 | [emoji.dutl.uk](https://emoji.dutl.uk)      | Emoji Gallery | A Gallery of emojis as images in various sizes 
-| [namefinder.dutl.uk](https://emoji.dutl.uk) | Name Finder   | Find English names similar to yours
+| [namefinder.dutl.uk](https://namefinder.dutl.uk) | Name Finder   | Find English names similar to yours
 | [adapter-manager.dutl.uk](https://adapter-manager.dutl.uk) | Adapter Manager | Manage the adapters in your home. Can you convert from your input to the desired output?
 | [behavioral-interview-practice.dutl.uk](https://behavioral-interview-practice.dutl.uk) | Behavioral Interview Practice | I made this to practice behavioral interview questions before interviewing with Amazon
 | [scientificturk.dutl.uk](https://scientificturk.dutl.uk) | Scientific Turk | Parse and translate loyalty-free articles from around the web
