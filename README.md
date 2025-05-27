@@ -14,6 +14,8 @@ This is [my](https://cemrekarakas.com) playground.
 | [untitled-diary-app.dutl.uk](#) | Untitled Diary App (UDA) | A slow social media app to have deeper & meaningful interactions with your loved ones (Deprecated)
 | [rss-reader.dutl.uk](https://rss-reader.dutl.uk) | Simple RSS Reader | A simple completely client-side RSS reader
 | [humane-search.dutl.uk](https://humane-search.dutl.uk) | Humane Search | Human-first search engine hoping to curate a human-generated-only thoughtful content space
+| [uk-tax-code-explainer.dutl.uk](https://uk-tax-code-explainer.dutl.uk/) | UK tax code explainer | HMRC gives only a guidance over tax codes and lacks an explainer, this tool does that
+| [flag-recognizer,dutl.uk](https://flag-recognizer.dutl.uk/) | Simple utility that can recognize flags you draw
 
 
 <style>
