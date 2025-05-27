@@ -14,7 +14,7 @@ This is [my](https://cemrekarakas.com) playground.
 | [uk-sponsors.dutl.uk](https://uk-sponsors.dutl.uk) | UK Sponsors | A simple frontend to view the UK Tier-2 visa sponsors list (alternative to [uktiersponsors](https://uktiersponsors.co.uk/))
 | [untitled-diary-app.dutl.uk](#)† | Untitled Diary App (UDA) | A slow social media app to have deeper & meaningful interactions with your loved ones (Deprecated)
 | [humane-search.dutl.uk](https://humane-search.dutl.uk) | Humane Search | Human-first search engine hoping to curate a human-generated-only thoughtful content space
-| [flag-recognizer,dutl.uk](https://flag-recognizer.dutl.uk/) | Flag recognizer |  Simple utility that can recognize flags you draw
+| [flag-recognizer.dutl.uk](https://flag-recognizer.dutl.uk/) | Flag recognizer |  Simple utility that can recognize flags you draw
 | [adapter-manager.dutl.uk](https://adapter-manager.dutl.uk) | Adapter Manager | Manage the adapters in your home. Can you convert from your input to the desired output?
 
 
