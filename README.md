@@ -16,6 +16,8 @@ This is [my](https://cemrekarakas.com) playground.
 | [humane-search.dutl.uk](https://humane-search.dutl.uk) | Humane Search | Human-first search engine hoping to curate a human-generated-only thoughtful content space
 | [flag-recognizer.dutl.uk](https://flag-recognizer.dutl.uk/) | Flag recognizer |  Simple utility that can recognize flags you draw
 | [adapter-manager.dutl.uk](https://adapter-manager.dutl.uk) | Adapter Manager | Manage the adapters in your home. Can you convert from your input to the desired output?
+| [global-meeting-planner.dutl.uk](https://global-meeting-planner.dutl.uk/) | Global Meeting Planner | Find suitable meeting times for global teams
+| [arned-settlement.dutl.uk/](https://earned-settlement.dutl.uk/) | Earned Settlement Calculator | Calculate the earliest date you can apply to ILR under the proposed earned settlement scheme
 
 
 <style>
