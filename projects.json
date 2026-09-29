@@ -1,0 +1,28 @@
+{
+  "owner": "cemreefe",
+  "domain": "dutl.uk",
+  "hide": ["www.dutl.uk", "dutl.uk", "mark2web-example.dutl.uk"],
+  "retired": ["untitled-diary-app.dutl.uk", "lisan.dutl.uk"],
+  "pinned": ["earned-settlement.dutl.uk", "uk-tax-code-explainer.dutl.uk", "global-meeting-planner.dutl.uk"],
+  "overrides": {
+    "rss-reader.dutl.uk": { "name": "RSS Reader", "blurb": "A simple, completely client-side RSS reader." },
+    "uk-tax-code-explainer.dutl.uk": { "name": "UK Tax Code Explainer", "blurb": "HMRC only gives guidance on tax codes. Enter yours and see what it actually means." },
+    "emoji.dutl.uk": { "name": "Emoji Gallery", "blurb": "Emojis as static images in various sizes." },
+    "behavioral-interview-practice.dutl.uk": { "name": "Behavioral Interview Practice", "blurb": "Built to rehearse behavioral questions before interviewing at Amazon." },
+    "uk-sponsors.dutl.uk": { "name": "UK Sponsors", "blurb": "A simple frontend for the UK Skilled Worker visa sponsor list." },
+    "humane-search.dutl.uk": { "name": "Humane Search", "blurb": "A human-first search engine for thoughtful, human-written content." },
+    "flag-recognizer.dutl.uk": { "name": "Flag Recognizer", "blurb": "Draw a flag, it tells you which one it is." },
+    "adapter-manager.dutl.uk": { "name": "Adapter Manager", "blurb": "Track the plug adapters at home. Can you get from your input to the output you need?" },
+    "global-meeting-planner.dutl.uk": { "name": "Global Meeting Planner", "blurb": "Find meeting times that work across time zones." },
+    "earned-settlement.dutl.uk": { "name": "Earned Settlement Calculator", "blurb": "The earliest date you can apply for ILR under the proposed earned settlement scheme, with a shareable tracker." },
+    "bulmaca.dutl.uk": { "name": "Bulmaca", "blurb": "A crossword game." },
+    "image-editor.dutl.uk": { "name": "Lite Image Editor", "blurb": "A small in-browser image editor." },
+    "umcmx.dutl.uk": { "name": "umcmx", "blurb": "My legacy art gallery." }
+  },
+  "extra": [
+    { "domain": "namefinder.dutl.uk", "name": "Name Finder", "blurb": "Find English names similar to yours.", "repo": "similar-name-finder" },
+    { "domain": "scientificturk.dutl.uk", "name": "Scientific Turk", "blurb": "Parse and translate royalty-free articles from around the web." },
+    { "domain": "lisan.dutl.uk", "name": "Lisan", "blurb": "Learn languages." },
+    { "domain": "untitled-diary-app.dutl.uk", "name": "Untitled Diary App", "blurb": "A slow social app for deeper conversations with the people you love." }
+  ]
+}

@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>dutl.uk — small tools by Cemre Karakas</title>
+  <meta name="description" content="Small, single-purpose web tools built by Cemre Karakas.">
+  <style>
+    :root {
+      --bg: #f6f4ec;
+      --card: #fffdf7;
+      --ink: #23261c;
+      --muted: #6c6f60;
+      --line: #e3e0d2;
+      --olive: #56652a;
+      --plum: #7a3552;
+      --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+      --sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #16180f;
+        --card: #1e2116;
+        --ink: #ecebe2;
+        --muted: #9a9c8b;
+        --line: #2f3324;
+        --olive: #b3c27a;
+        --plum: #d38aa8;
+      }
+    }
+    * { box-sizing: border-box; }
+    html { background: var(--bg); color: var(--ink); font: 16px/1.55 var(--sans); }
+    body { margin: 0; }
+    a { color: inherit; }
+    .wrap { max-width: 1040px; margin: 0 auto; padding: 0 24px; }
+
+    header {
+      position: relative;
+      padding: 96px 0 56px;
+      background:
+        linear-gradient(to bottom, color-mix(in srgb, var(--bg) 30%, transparent), var(--bg) 92%),
+        url(assets/grove.jpg) center 35% / cover no-repeat;
+    }
+    @media (prefers-color-scheme: dark) {
+      header {
+        background:
+          linear-gradient(to bottom, color-mix(in srgb, var(--bg) 55%, transparent), var(--bg) 92%),
+          url(assets/grove.jpg) center 35% / cover no-repeat;
+      }
+    }
+    h1 { font: 600 clamp(2.4rem, 6vw, 3.6rem)/1.05 var(--serif); letter-spacing: -0.02em; margin: 0 0 14px; }
+    h1 span { color: var(--olive); }
+    .lede { max-width: 36em; font-size: 1.1rem; margin: 0; }
+    .lede a { color: var(--plum); text-underline-offset: 3px; }
+
+    h2 {
+      font: 600 0.8rem/1 var(--sans); letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted);
+      display: flex; gap: 12px; align-items: center; margin: 40px 0 18px;
+    }
+    h2::after { content: ""; flex: 1; border-top: 1px solid var(--line); }
+
+    .grid { list-style: none; padding: 0; margin: 0; display: grid; gap: 16px; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); }
+    .card {
+      position: relative; display: flex; flex-direction: column; gap: 8px;
+      background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 20px 20px 16px;
+      transition: border-color .15s, transform .15s, box-shadow .15s;
+    }
+    .card:hover { border-color: color-mix(in srgb, var(--olive) 55%, var(--line)); transform: translateY(-2px); box-shadow: 0 8px 24px -14px rgb(0 0 0 / .35); }
+    .card .title { font: 600 1.2rem/1.25 var(--serif); text-decoration: none; }
+    .card .title::after { content: ""; position: absolute; inset: 0; border-radius: inherit; }
+    .card p { margin: 0; color: var(--muted); flex: 1; }
+    .domain { color: var(--olive); font: 0.8rem/1.4 ui-monospace, SFMono-Regular, Menlo, monospace; margin-top: 6px; overflow-wrap: anywhere; }
+    .meta { display: flex; flex-wrap: wrap; gap: 4px 6px; font-size: 0.8rem; color: var(--muted); }
+    .meta > * + *::before { content: "·"; margin-right: 6px; display: inline-block; text-decoration: none; color: var(--muted); }
+    .meta a { position: relative; z-index: 1; text-underline-offset: 2px; }
+    .meta a:hover { color: var(--plum); }
+    .card.down { opacity: .6; }
+    .status { color: var(--plum); }
+
+    .retired { list-style: none; padding: 0; margin: 0; color: var(--muted); display: grid; gap: 6px; }
+    .retired span { color: var(--ink); font-family: var(--serif); font-weight: 600; margin-right: 6px; }
+
+    footer.wrap { margin: 56px auto 40px; padding-top: 18px; border-top: 1px solid var(--line); font-size: 0.85rem; color: var(--muted); display: flex; flex-wrap: wrap; gap: 8px 20px; justify-content: space-between; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1>dutl<span>.</span>uk</h1>
+      <p class="lede">Small, single-purpose tools I built because I needed them. Most run entirely in your browser. By <a href="https://cemrekarakas.com">Cemre Karakas</a>.</p>
+    </div>
+  </header>
+  <main class="wrap">
+    <h2>Live · {{count}}</h2>
+    <ul class="grid">{{projects}}
+    </ul>
+    <h2>Retired</h2>
+    <ul class="retired">
+        {{retired}}
+    </ul>
+  </main>
+  <footer class="wrap">
+    <span>Rebuilt automatically from <a href="https://github.com/cemreefe">github.com/cemreefe</a> · <time datetime="{{builtIso}}">{{built}}</time></span>
+    <a href="https://github.com/cemreefe/dutluk">how this page works</a>
+  </footer>
+</body>
+</html>

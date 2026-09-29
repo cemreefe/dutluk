@@ -1,35 +1,34 @@
-This is [my](https://cemrekarakas.com) playground.
+# dutl.uk
 
-## Projects under dutl.uk
+Source for [dutl.uk](https://dutl.uk), the index of small tools I host under `*.dutl.uk`.
 
-| Website | Project | Notes |
-| -                                           | -             | - |
-| [rss-reader.dutl.uk](https://rss-reader.dutl.uk) | Simple RSS Reader | A simple completely client-side RSS reader
-| [uk-tax-code-explainer.dutl.uk](https://uk-tax-code-explainer.dutl.uk/) | UK tax code explainer | HMRC gives only a guidance over tax codes and lacks an explainer, this tool does that
-| [lisan.dutl.uk](https://lisan.dutl.uk)      | Lisan         | Learn languages
-| [emoji.dutl.uk](https://emoji.dutl.uk)      | Emoji Gallery | A Gallery of emojis as images in various sizes 
-| [namefinder.dutl.uk](https://namefinder.dutl.uk) | Name Finder   | Find English names similar to yours
-| [behavioral-interview-practice.dutl.uk](https://behavioral-interview-practice.dutl.uk) | Behavioral Interview Practice | I made this to practice behavioral interview questions before interviewing with Amazon
-| [scientificturk.dutl.uk](https://scientificturk.dutl.uk) | Scientific Turk | Parse and translate loyalty-free articles from around the web
-| [uk-sponsors.dutl.uk](https://uk-sponsors.dutl.uk) | UK Sponsors | A simple frontend to view the UK Tier-2 visa sponsors list (alternative to [uktiersponsors](https://uktiersponsors.co.uk/))
-| [untitled-diary-app.dutl.uk](#)† | Untitled Diary App (UDA) | A slow social media app to have deeper & meaningful interactions with your loved ones (Deprecated)
-| [humane-search.dutl.uk](https://humane-search.dutl.uk) | Humane Search | Human-first search engine hoping to curate a human-generated-only thoughtful content space
-| [flag-recognizer.dutl.uk](https://flag-recognizer.dutl.uk/) | Flag recognizer |  Simple utility that can recognize flags you draw
-| [adapter-manager.dutl.uk](https://adapter-manager.dutl.uk) | Adapter Manager | Manage the adapters in your home. Can you convert from your input to the desired output?
-| [global-meeting-planner.dutl.uk](https://global-meeting-planner.dutl.uk/) | Global Meeting Planner | Find suitable meeting times for global teams
-| [earned-settlement.dutl.uk/](https://earned-settlement.dutl.uk/) | Earned Settlement Calculator | Calculate the earliest date you can apply to ILR under the proposed earned settlement scheme
+The page rebuilds itself every night, so it stays current without anyone editing it.
 
+## How it works
 
-<style>
-body {
-  background-image: url(https://i.ibb.co/K0JCmnr/dutluk-transparent.png);
-  background-size: cover;
-  height: 100vh;
-}
-.markdown-body {
-  font-weight: 200;
-  background-color: #FFFFFFAA;
-  padding: 2em;
-  border-radius: 1em;
-}
-</style>
+`scripts/build.mjs` (Node 22, no dependencies):
+
+1. Lists the public, non-fork repos of `cemreefe` on GitHub.
+2. Reads each repo's `CNAME` file. Any repo that serves a `*.dutl.uk` domain is a project.
+3. Merges in `projects.json`, which holds:
+   - `overrides`: display names and blurbs, keyed by domain (falls back to the repo description)
+   - `extra`: projects that don't come from a public repo with a `CNAME`
+   - `pinned`, `hide`, `retired`: ordering and visibility
+4. Checks that each live domain responds, and marks unreachable ones.
+5. Fills `template.html` and writes the result to `_site/`.
+
+`.github/workflows/build.yml` runs the build on every push to `main`, nightly, and on manual dispatch, then deploys `_site/` to GitHub Pages.
+
+## Adding a project
+
+- Hosted from a public repo via GitHub Pages: nothing to do. It appears after the next build. Optionally add a nicer name or blurb under `overrides`.
+- Hosted elsewhere: add it to `extra`.
+
+## Local build
+
+```sh
+GITHUB_TOKEN=$(gh auth token) node scripts/build.mjs
+python3 -m http.server -d _site 8080
+```
+
+The token is optional. It only raises the GitHub API rate limit.
